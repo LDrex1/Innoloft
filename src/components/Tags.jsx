@@ -7,7 +7,10 @@ function Tags({ title, tags }) {
       <div className="flex flex-wrap gap-y-1 gap-x-1.5">
         {Array.isArray(tags) ? (
           tags.map((tag) => (
-            <p key={tag} className="bg-gray-300 p-1 rounded-md text-gray-600">
+            <p
+              key={tag}
+              className="bg-gray-300 p-1 px-2 rounded-md text-gray-600"
+            >
               {tag}
             </p>
           ))
