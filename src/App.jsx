@@ -1,4 +1,4 @@
-import { Link, Route, Routes } from "react-router-dom";
+import { Link, Route, Routes, createBrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Edit from "./pages/products/Edit";
 import View from "./pages/products/View";
@@ -8,9 +8,7 @@ import { useAppConfigQuery, useGetProductQuery } from "./api/innoloftApi";
 function App() {
   const { data, isFetching, error } = useGetProductQuery();
   const { data: config } = useAppConfigQuery();
-  console.log(config);
 
-  console.log(data, isFetching);
   return (
     <>
       <Navbar config={config} user={data?.user} />
