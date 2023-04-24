@@ -15,7 +15,7 @@ function Navbar({ config, user }) {
   //   const [{ mainColor }] = allConfig.filter(({ id }) => id === id);
 
   const headerColor = id === "1" ? true : false;
-  const textColor = id === "1" ? true : false;
+  const textColor = id === "1" ? false : true;
   const handleNav = () => {
     setNav((prev) => !prev);
   };
