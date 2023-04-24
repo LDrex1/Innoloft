@@ -14,9 +14,7 @@ function Address({ company, map }) {
           {`${house} ${street} ${city?.name} ${country?.name}`}
         </p>
       </div>
-      <div className="mt-2">
-        <Map map={false} center={center} />
-      </div>
+      <div className="mt-2">{map && <Map map={map} center={center} />}</div>
     </>
   );
 }

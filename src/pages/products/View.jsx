@@ -98,7 +98,7 @@ function View({ data, isFetching }) {
           <div className="col-span-12 md:col-span-2">
             <MainAccountInfo company={company} />
             <div className="mt-4">
-              <Address company={company} />
+              <Address company={company} map={true} />
             </div>
           </div>
         </div>
