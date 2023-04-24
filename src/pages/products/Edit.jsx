@@ -87,7 +87,7 @@ const EditSections = ({ data, isFetching }) => {
 
     try {
       await updateProduct({ id, body }).unwrap();
-      // navigate("/products/view/");
+      navigate("/products/view/");
     } catch (err) {
       console.log(err.message);
     }
