@@ -46,7 +46,7 @@ function Navbar({ config, user }) {
           <IoIosNotificationsOutline />
         </li>
         <li className="p-4 flex items-center">
-          <ProfilePic profilePicture={user.profilePicture} />
+          <ProfilePic profilePicture={user?.profilePicture} />
           <span className="ps-1">
             <IoIosArrowDown />
           </span>
@@ -84,7 +84,7 @@ function Navbar({ config, user }) {
             <IoIosNotificationsOutline />
           </li>
           <li className="p-2 border-gray-600 flex items-center">
-            <ProfilePic profilePicture={user.profilePicture} />
+            <ProfilePic profilePicture={user?.profilePicture} />
             <span>
               <IoIosArrowDown />
             </span>

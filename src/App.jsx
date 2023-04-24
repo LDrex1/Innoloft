@@ -13,7 +13,7 @@ function App() {
   console.log(data, isFetching);
   return (
     <>
-      <Navbar config={config} user={data.user} />
+      <Navbar config={config} user={data?.user} />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route
