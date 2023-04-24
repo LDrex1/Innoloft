@@ -6,7 +6,7 @@ import svgr from "vite-plugin-svgr";
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
   return {
-    base: "/Innoloft",
+    base: "/Innoloft/",
     plugins: [svgr(), react()],
     define: {},
   };
